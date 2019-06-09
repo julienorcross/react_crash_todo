@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './AddTodo.scss';
 
 export class AddTodo extends Component {
   state = {
@@ -16,7 +17,10 @@ export class AddTodo extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit} style={{ display: 'flex' }}>
+      <form
+        className="container"
+        onSubmit={this.onSubmit}
+        style={{ display: 'flex' }}>
         <input
           type="text"
           name="title"

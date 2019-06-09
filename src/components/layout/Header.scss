@@ -1,0 +1,20 @@
+header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #999;
+    }
+  }
+
+  h1 {
+    margin: 1rem 0;
+  }
+  .navlink {
+    padding: 1rem;
+  }
+}

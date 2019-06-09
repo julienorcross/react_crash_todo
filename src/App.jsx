@@ -60,7 +60,7 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route
                 render={props => (
-                  <div className="container">
+                  <div>
                     <AddTodo addTodo={this.addTodo} />
                     <Todos
                       todos={this.state.todos}

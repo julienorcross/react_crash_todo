@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   // toggle complete
-  markComplete = id => {
+  toggleComplete = id => {
     this.setState({
       todos: this.state.todos.map(todo => {
         if (todo.id === id) {
@@ -54,20 +54,20 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="container">
+          <div>
             <Header />
             <Switch>
               <Route path="/about" component={About} />
               <Route
                 render={props => (
-                  <React.Fragment>
+                  <div className="container">
                     <AddTodo addTodo={this.addTodo} />
                     <Todos
                       todos={this.state.todos}
-                      markComplete={this.markComplete}
+                      toggleComplete={this.toggleComplete}
                       delTodo={this.delTodo}
                     />
-                  </React.Fragment>
+                  </div>
                 )}
               />
             </Switch>

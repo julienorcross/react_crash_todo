@@ -8,7 +8,7 @@ class Todos extends Component {
       <TodoItem
         key={todo.id}
         todo={todo}
-        markComplete={this.props.markComplete}
+        toggleComplete={this.props.toggleComplete}
         delTodo={this.props.delTodo}
       />
     ));
@@ -18,7 +18,7 @@ class Todos extends Component {
 // PropTypes
 Todos.propTypes = {
   todos: PropTypes.array.isRequired,
-  markComplete: PropTypes.func.isRequired,
+  toggleComplete: PropTypes.func.isRequired,
   delTodo: PropTypes.func.isRequired
 };
 

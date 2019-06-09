@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-crash-todo/static/css/main.76e4443e.chunk.css",
+    "main.js": "/react-crash-todo/static/js/main.ed30e616.chunk.js",
+    "main.js.map": "/react-crash-todo/static/js/main.ed30e616.chunk.js.map",
+    "runtime~main.js": "/react-crash-todo/static/js/runtime~main.06eea54e.js",
+    "runtime~main.js.map": "/react-crash-todo/static/js/runtime~main.06eea54e.js.map",
+    "static/js/2.e02322d4.chunk.js": "/react-crash-todo/static/js/2.e02322d4.chunk.js",
+    "static/js/2.e02322d4.chunk.js.map": "/react-crash-todo/static/js/2.e02322d4.chunk.js.map",
+    "index.html": "/react-crash-todo/index.html",
+    "precache-manifest.8e5d81ec0496b42284343749ea1901e3.js": "/react-crash-todo/precache-manifest.8e5d81ec0496b42284343749ea1901e3.js",
+    "service-worker.js": "/react-crash-todo/service-worker.js",
+    "static/css/main.76e4443e.chunk.css.map": "/react-crash-todo/static/css/main.76e4443e.chunk.css.map"
+  }
+}

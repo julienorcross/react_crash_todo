@@ -1,3 +1,29 @@
-.todos:nth-child(even) {
-  background: #f4f4f4;
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  font-size: 14px;
+  padding: 10px 1rem;
+  background: #fff;
+  &:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  &:nth-child(even) {
+    background: #f4f4f4;
+  }
+}
+
+.deleteBtn {
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
 }

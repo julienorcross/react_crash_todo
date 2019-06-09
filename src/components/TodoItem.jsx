@@ -5,8 +5,6 @@ import './TodoItem.scss';
 export class TodoItem extends Component {
   getStyle = () => {
     return {
-      padding: '10px',
-      borderBottom: '1px #ccc dotted',
       textDecoration: this.props.todo.completed ? 'line-through' : 'none'
     };
   };
@@ -14,8 +12,8 @@ export class TodoItem extends Component {
   render() {
     const { id, title } = this.props.todo;
     return (
-      <div style={this.getStyle()} className="todos">
-        <div className="todoItem container">
+      <div className="todoItem">
+        <div>
           <input
             type="checkbox"
             id={id}
@@ -23,11 +21,15 @@ export class TodoItem extends Component {
             onChange={this.props.toggleComplete.bind(this, id)}
             checked={!!this.props.todo.completed}
           />
-          <label for={id}>{title}</label>
-          <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>
-            x
-          </button>
+          <label style={this.getStyle()} htmlFor={id}>
+            {title}
+          </label>
         </div>
+        <button
+          onClick={this.props.delTodo.bind(this, id)}
+          className="deleteBtn">
+          x
+        </button>
       </div>
     );
   }
@@ -38,16 +40,6 @@ TodoItem.propTypes = {
   todo: PropTypes.object.isRequired,
   toggleComplete: PropTypes.func.isRequired,
   delTodo: PropTypes.func.isRequired
-};
-
-const btnStyle = {
-  background: '#ff0000',
-  color: '#fff',
-  border: 'none',
-  padding: '5px 10px',
-  borderRadius: '50%',
-  cursor: 'pointer',
-  float: 'right'
 };
 
 export default TodoItem;

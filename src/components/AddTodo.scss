@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  margin: 1rem 0;
+
+  input {
+    flex: 10;
+    padding: 10px 0;
+
+    &::placeholder {
+      font-size: 12px;
+    }
+  }
+
+  .btn {
+    flex: 1;
+  }
+}
